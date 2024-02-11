@@ -22,8 +22,3 @@ container_build:
 .PHONY: container-up-build
 container_up_build:
 	docker-compose up -d --build
-
-# フロント開発用サーバ起動
-.PHONY: dev
-dev:
-	docker-compose exec npm run dev
