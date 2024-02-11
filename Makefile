@@ -26,4 +26,4 @@ container_up_build:
 # フロント開発用サーバ起動
 .PHONY: dev
 dev:
-	docker-compose exec front npm run dev
+	docker-compose exec npm run dev
