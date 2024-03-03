@@ -1,7 +1,7 @@
 # Reactコンテナのnpmパッケージをアップデート
 .PHONY: npm-update-for-front
-npm_update_for_front:
-	docker-compose exec front npm update
+npm-update-for-front:
+	docker-compose exec node sh -c 'cd react-blessing-card && npm update'
 
 # コンテナ起動
 .PHONY: up
@@ -15,10 +15,10 @@ down:
 
 # コンテナビルド
 .PHONY: container-build
-container_build:
+container-build:
 	docker-compose build
 
 # コンテナビルドして起動
 .PHONY: container-up-build
-container_up_build:
+container-up-build:
 	docker-compose up -d --build
