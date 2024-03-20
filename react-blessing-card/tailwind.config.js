@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
-const customColors = require('./config/tailwind/colors');
-
 /** @type {import('tailwindcss').Config} */
 (
   module.exports = {
@@ -20,9 +18,6 @@ const customColors = require('./config/tailwind/colors');
         fontFamily: {
           sans: ['var(--font-sans)', ...fontFamily.sans],
         },
-
-        // color settings
-        ...customColors,
 
         // settings for shadcn
         keyframes: {
