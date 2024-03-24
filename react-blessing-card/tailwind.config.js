@@ -18,7 +18,9 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
         fontFamily: {
           sans: ['var(--font-sans)', ...fontFamily.sans],
         },
-
+        colors: {
+          background: "hsl(var(--background))"
+        },
         // settings for shadcn
         keyframes: {
           'accordion-down': {
