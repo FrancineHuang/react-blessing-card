@@ -6,11 +6,12 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
   module.exports = {
     // temperately configure the template paths
     content: [
-      'src/*.{ts.tsx}',
-      'components/*.{ts,tsx}',
-      'pages/*.{ts,tsx}',
-      'hooks/*.{ts,tsx}',
-      'utils/*.{ts,tsx}',
+      './src/**/*.{ts,tsx}',
+      './src/*.{ts.tsx}',
+      './components/*.{ts,tsx}',
+      './pages/*.{ts,tsx}',
+      './hooks/*.{ts,tsx}',
+      './utils/*.{ts,tsx}',
     ],
     theme: {
       extend: {
